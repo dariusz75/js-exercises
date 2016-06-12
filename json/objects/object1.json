@@ -1,0 +1,23 @@
+{ "products" : [
+								{ 
+									"name" : "JSON fundamentals",
+									"price" : 50,
+									"category" : "JavaScript"
+								},
+								{ 
+									"name" : "NodeJS fundamentals",
+									"price" : 60,
+									"category" : "JavaScript"
+								},
+								{ 
+									"name" : "React fundamentals",
+									"price" : 70,
+									"category" : "JavaScript"
+								},
+								{ 
+									"name" : "Angular fundamentals",
+									"price" : 80,
+									"category" : "JavaScript"
+								}
+								]
+};
