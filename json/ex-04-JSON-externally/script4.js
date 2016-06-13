@@ -1,8 +1,15 @@
 
 $(document).ready(function() {
 
-	$.getJSON('object1.json', function(data) {
+$.ajax({
+  dataType: "json",
+  url: 'object1.json',
+  method: 'get'
+})
+	.done(function(data) {
 		
+		//data = JSON.parse(data.responseText);
+		console.log(data.responseText);
 		var output = '<ul>';
 
 		for (var i = 0; i < data.products.length; i++) {
@@ -13,7 +20,10 @@ $(document).ready(function() {
 		
 		output = output + '</ul>';
 		document.getElementById('content').innerHTML = output;
-	});
+	})
+	.fail(function(jqXHR, textStatus, errorThrown) {
+    console.log(textStatus);
+  });
+  
+
 });
-
-
